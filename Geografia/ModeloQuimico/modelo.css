@@ -1,0 +1,58 @@
+@import url(style.css);
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* html {height: 100vh;} */
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #555;
+    height: 10%;
+    border-radius: 1rem;
+}
+
+a{ background-color: blue; padding: 0.5rem; margin: 0 0.5rem; border-radius: 1rem; } 
+
+body { height: 100vh; padding:1rem; gap: 1rem; }
+
+.conteudo {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    /* align-items: center; */
+    height: 90%;
+    padding: 1rem 0 0 0;
+    gap: 2rem;
+    
+}
+
+.div_svg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+    background: red;
+    padding: 2rem;
+    
+}
+
+.texto {
+    display: flex;
+    justify-content: left;
+    width: 70%;
+    height: 100%;
+    padding: 2rem;
+    background: red;
+}
+
+img {width: 10rem; height: 4.5rem;}
+
+#img1 { width: 12rem; }
+#img2 { width: 9rem; height: 5rem;}
+#img3 { width: 8rem;  }
+#img4 { width: 6rem;  }
+#img5 { width: 4rem;  }
