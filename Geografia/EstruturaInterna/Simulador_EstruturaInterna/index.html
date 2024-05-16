@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-H0NGSQGNCE"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-H0NGSQGNCE');
-</script>
     <meta charset="UTF-8"/>
     <link rel="manifest" href="manifest.webmanifest">
 
@@ -105,7 +96,6 @@
 	<script src="fontfaceobserver-font-manager/fontfaceobserver-font-manager.js" crossorigin="anonymous"></script>
 	<script src="Extensions/PanelSpriteObject/panelspriteruntimeobject-pixi-renderer.js" crossorigin="anonymous"></script>
 	<script src="Extensions/PanelSpriteObject/panelspriteruntimeobject.js" crossorigin="anonymous"></script>
-
 	<script src="Extensions/TextObject/textruntimeobject-pixi-renderer.js" crossorigin="anonymous"></script>
 	<script src="Extensions/TextObject/textruntimeobject.js" crossorigin="anonymous"></script>
 	<script src="Extensions/TweenBehavior/TweenManager.js" crossorigin="anonymous"></script>
@@ -120,36 +110,41 @@
 	<script src="object-capabilities/ScalableBehavior.js" crossorigin="anonymous"></script>
 	<script src="object-capabilities/TextContainerBehavior.js" crossorigin="anonymous"></script>
 	<script src="Extensions/3D/HemisphereLight.js" crossorigin="anonymous"></script>
+	<script src="Extensions/Effects/glow-pixi-filter.js" crossorigin="anonymous"></script>
+	<script src="Extensions/Effects/outline-pixi-filter.js" crossorigin="anonymous"></script>
+	<script src="Extensions/Effects/pixi-filters/filter-glow.js" crossorigin="anonymous"></script>
+	<script src="Extensions/Effects/pixi-filters/filter-outline.js" crossorigin="anonymous"></script>
 	<script src="code0.js" crossorigin="anonymous"></script>
 	<script src="code1.js" crossorigin="anonymous"></script>
 	<script src="code2.js" crossorigin="anonymous"></script>
 	<script src="code3.js" crossorigin="anonymous"></script>
 	<script src="code4.js" crossorigin="anonymous"></script>
+	<script src="code5.js" crossorigin="anonymous"></script>
 	<script src="data.js" crossorigin="anonymous"></script>
 
 
 </head>
 <body>
 
-	<a class="btnMenu" href="../../estrutura_da_terra.html">< Voltar</a>
-    
+    <a class="btnMenu" href="../../estrutura_da_terra.html">< Voltar</a>
+
 	<script>
 
-		(function() {
-			//Initialization
-			var game = new gdjs.RuntimeGame(gdjs.projectData, {});
+    (function() {
+        //Initialization
+        var game = new gdjs.RuntimeGame(gdjs.projectData, {});
 
-			//Create a renderer
-			game.getRenderer().createStandardCanvas(document.body);
+        //Create a renderer
+        game.getRenderer().createStandardCanvas(document.body);
 
-			//Bind keyboards/mouse/touch events
-			game.getRenderer().bindStandardEvents(game.getInputManager(), window, document);
+        //Bind keyboards/mouse/touch events
+        game.getRenderer().bindStandardEvents(game.getInputManager(), window, document);
 
-			//Load all assets and start the game
-			game.loadAllAssets(function() {
-				game.startGameLoop();
-			});
-		})();
+        //Load all assets and start the game
+        game.loadAllAssets(function() {
+            game.startGameLoop();
+        });
+    })();
 
 	</script>
 </body>
