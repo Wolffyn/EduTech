@@ -109,7 +109,7 @@ header p    { font-size: 1rem;}
     height: 5rem;
     padding: 0.5rem;
     background: var(--CorPrimario);
-    border-top: 0.3rem solid #fff;
+    margin: 0;
     
 }
 
@@ -117,7 +117,7 @@ header p    { font-size: 1rem;}
     display: flex; 
     justify-content: space-around ;
     width: 100%;
-
+    
 }
 
 
