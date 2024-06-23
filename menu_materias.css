@@ -8,6 +8,8 @@ body { font-family: Arial, sans-serif;
  background-color: antiquewhite;
  }
 
+ h4 {text-align: center;}
+
 .container { display: grid;
  grid-template-columns: repeat(3, 1fr);
  gap: 1rem;
